@@ -1,4 +1,12 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.0)
 project(data_structures_and_algorithms_)
 
 set(CMAKE_CXX_STANDARD 20)
+
+add_executable(bubble_sort sort/bubble_sort.cpp)
+add_executable(linear_search search/linear_search.cpp)
+add_executable(insertion_sort sort/insertion_sort.cpp)
+add_executable(quick_sort sort/quick_sort.cpp)
+add_executable(01_native parttern_search/01_native.cpp)
+add_executable(02_regex parttern_search/02_regex.cpp)
+add_executable(binary_search search/binary_search.cpp)
