@@ -32,13 +32,14 @@ int main() {
   NodeLinkedList * second = NULL;
   NodeLinkedList * third = NULL;
 
-  head = (NodeLinkedList*)malloc(sizeof(struct Node));
-  second = (NodeLinkedList*)malloc(sizeof(struct Node));
-  third = (NodeLinkedList*)malloc(sizeof(struct Node));
+  head = (NodeLinkedList*)malloc(sizeof(NodeLinkedList));
+  second = (NodeLinkedList*)malloc(sizeof(NodeLinkedList));
+  third = (NodeLinkedList*)malloc(sizeof(NodeLinkedList));
 
   head->data=1;
   second->data=2;
   third->data=3;
+
   head->next=second;
   second->next=third;
 
