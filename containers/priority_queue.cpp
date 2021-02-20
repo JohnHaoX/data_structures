@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void ShowPQ(priority_queue<int> pq){
+void PrintQueue(priority_queue<int> pq){
   priority_queue<int> temp=pq;
   while (!temp.empty()){
     cout<<temp.top()<<'\n';
@@ -17,6 +17,9 @@ void ShowPQ(priority_queue<int> pq){
 
   cout << '\n';
 }
+
+
+//https://en.cppreference.com/w/cpp/container/priority_queue
 
 int main() {
   priority_queue<int> pq;
@@ -28,7 +31,7 @@ int main() {
   pq.push(5);
   pq.push(1);
 
-  ShowPQ(pq);
+  PrintQueue(pq);
 
 
   return 0;
